@@ -1,0 +1,344 @@
+body {
+    background-color: rgba(48, 79, 201, 0.5);
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    /* z-index: 1;
+    filter: opacity(40%); */
+  }
+  @font-face {
+    font-family: 'modius';
+    src: url('Modius/Modius/Morgant-Regular.eot');
+    /* url('../fonts/providence-bold.eot?#iefix') format('embedded-opentype'), */
+        src:  url('Modius/Modius/Morgant-Regular.woff') format('woff'),
+          url('Modius/Modius/Morgant-Regular.woff') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+        }
+  
+  @font-face {
+    font-family: 'brugty';
+    src: url('Brugty/Brugty/Brugty\ DEMO.eot');
+        src:  url('Brugty/Brugty/BrugtyDEMO-Regular.woff') format('woff'),
+            url('Brugty/Brugty/BrugtyDEMO-Regular.woff') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+  
+    .content {
+      width: 100%;
+      max-width: auto;
+      position:relative;
+      margin-top: 2%;
+    }
+  
+    #content{
+      min-height: 100%;
+  }
+  
+    .content img {
+      width: 100%;
+      height: auto;
+    }
+
+    h1{
+      position:absolute;
+      top: 6%;
+      left: 12%;
+      font-family: "brugty";
+      font-weight: 500;
+      color: #ffffff;
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 90px;
+      margin: auto;
+  }
+  
+    h2{
+      /*font-family: "modius";*/
+      font-weight: 500;
+      color: #ffffff;
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 35px;
+      margin: auto;
+  }
+  
+    h3{
+      font-family: "brugty";
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: -2px;
+  }
+
+  h4 {
+    position:absolute;
+    top: 27%;
+    left: 12%;
+    font-family: "brugty";
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 40px;
+    margin: auto;
+  }
+  
+  .btn-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    opacity: 100%;
+}
+.btn-group button{
+    width: 400px;
+    height: 168px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 150px;
+    border: none;
+    margin-bottom: 40px;
+    font-family: "modius";
+
+}
+.btn1{
+    color: #ffffff;
+    background-image: url(button1invert.png);
+    background-size: cover;
+    background-color: transparent;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.btn2{
+    color: #ffffff;
+    background-image: url(button2invert.png);
+    background-size:cover;
+    background-color:transparent;
+}
+
+.btn3{
+    color: #ffffff;
+    background-image: url(button3invert.png);
+    background-size: cover;
+    background-color:transparent;
+}
+
+.btn4{
+    color: #ffffff;
+    background-image: url(button4invert.png);
+    background-size: cover;
+    background-color:transparent;
+  }
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px));
+    text-align: center;
+  }
+
+  .button1 {
+    position:absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);  
+  }
+  .button2 {
+    position:absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);  
+  }
+
+  .button3 {
+    position:absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);  
+  }
+  .button4 {
+    position:absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);  
+  }
+
+  .btn1:hover {
+        background-color:transparent;
+        color: #0076A9;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 32px;
+        font-weight: bold;
+        /*box-shadow: 2px 3px 5px#FF8956;*/
+    
+      }
+    
+      .btn2:hover {
+        background-color:transparent;    
+        color: #E58800;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 32px;
+        font-weight: bold;
+        /*box-shadow: 10px 5px 5px #1A77FF;*/
+    
+    }
+    .btn3:hover {
+        background-color:transparent;
+        color: #29B68F;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 32px;
+        font-weight: bold;
+        /*box-shadow: 10px 5px 5px #D64970;*/
+    
+    }
+    .btn4:hover {
+        background-color:transparent;    
+        color: #D43CEE;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 32px;
+        font-weight: bold;
+        /*box-shadow: 10px 5px 5px #2BC311;*/
+    }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0; 
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.open-modal{
+    display:block;
+}
+
+.modal-content{
+    background-color: #000000;
+    /*background-image: url(backgroundinverted.png);
+    background-size: cover;*/
+    margin: 10% auto;
+    width: 70%;
+    padding:20px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.2), 0 7px 20px rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+    border-radius: 20px;
+    border: rgb(255, 255, 255) 5px solid;
+}
+.imageFlower{
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+    border: rgb(255, 255, 255) 5px solid;
+    border-radius: 20px;
+}
+
+.modal-header1{
+    /* background-color: #0076A9; */
+    background-image: url(backgroundinverted.png);
+    background-size: cover;
+    border-radius: 30px;
+    font-family: "modius";
+    border: rgb(255, 255, 255) 5px solid;
+    border-radius: 20px;
+    padding-top: 1.5%;
+}
+.modal-header2{
+    /* background-color: #E58800; */
+    background-image: url(backgroundinverted.png);
+    background-size: cover;
+    border-radius: 30px;
+    font-family: "modius";
+    border: rgb(255, 255, 255) 5px solid;
+    border-radius: 20px;
+    padding-top: 1%;
+}
+.modal-header3{
+    /* background-color: #29B68F; */
+    background-image: url(backgroundinverted.png);
+    background-size: cover;
+    border-radius: 30px;
+    font-family: "modius";
+    border: rgb(255, 255, 255) 5px solid;
+    border-radius: 20px;
+    padding-top: 1%;
+}
+.modal-header4{
+    /* background-color: #D43CEE; */
+    background-image: url(backgroundinverted.png);
+    background-size: cover;
+    border-radius: 30px;
+    font-family: "modius";
+    border: rgb(255, 255, 255) 5px solid;
+    border-radius: 20px;
+    padding-top: 1%;
+}
+.modal-footer {
+    color: #070707;
+    text-align: center;
+    padding-right: 30px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.closeBtn{
+    color:rgb(0, 0, 0);
+    float: right;
+    font-size: 30px;
+    margin-top: 0.6%;
+    margin-right: 20px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    color: #171616;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+    .footer {  
+      font-family: "brugty";
+      position: relative;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      margin-top: 2%;
+      }  
+  
+    .footer img {
+      width: 100%;
+      height: auto;
+      }
+
+  .footer-header {
+    font-size: 40px;
+    position: absolute;
+    top: 25%;
+    right: 12%;
+    transform: translate(-50%, -50%); 
+  }    
+  
+  .bottom-right {
+      position: absolute;
+      top: 65%;
+      right: -22%;
+      transform: translate(-50%, -50%);  
+      }
+    

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Brugty DEMO';
+  src: url('Brugty DEMO.eot');
+  src: url('Brugty DEMO.eot?#iefix') format('embedded-opentype'),
+       url('Brugty DEMO.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrugtyDEMO-Regular';
+  src: url('BrugtyDEMO-Regular.svg#BrugtyDEMO-Regular') format('svg'),
+       url('BrugtyDEMO-Regular.ttf') format('truetype'),
+       url('BrugtyDEMO-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

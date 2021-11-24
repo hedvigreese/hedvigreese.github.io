@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>🌳 Plantastic</title>
+    <meta charset="utf-8" />
+    <!-- Ensures that the website scales as it should on different devices -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <div class="content">
+      <h1>PLANTASTIC</h1>
+      <h4>Where do you want to put your plant?</h4>
+        <img src="background2.png" alt="background">
+        <div class="grid">
+            <div class="btn-group">
+              <div class="button1">
+              <button data-window="shadow" data-box="modal" class="btn1">Shadow</button>
+            </div>
+            <div class="button2">
+              <button data-window="sun" data-box="modal" class="btn2">In the sun</button>
+            </div>
+            <div class="button3">
+              <button data-window="outside" data-box="modal" class="btn3">Outside</button>
+            </div>
+            <div class="button4">
+              <button data-window="dontknow" data-box="modal" class="btn4">Don't know</button>
+            </div>
+            </div>
+           </div>
+          </div>
+    </div>
+
+<!--Modals-->
+<div id="shadow" class="modal">
+    <div class="modal-content">
+        <div class="modal-header1">
+          <span data-dismiss="modal" class="closeBtn">&times;</span>
+          <h2>Shadow</h2>
+        </div>
+        <div class="modal-footer">
+         <h3>These plants are great to put in a more shadow space.</h3>
+     </div>
+     <div class="modal-body"> 
+         <img class="imageFlower" src="shadow.png" alt="shadow"/> 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="sun" class="modal">
+     <div class="modal-content">
+         <div class="modal-header2">
+           <span data-dismiss="modal" class="closeBtn">&times;</span>
+           <h2>Sun</h2>
+         </div>
+         <div class="modal-footer">
+          <h3>These plants are great to put in a more sunny space.</h3>
+      </div>
+      <div class="modal-body">  
+       <img class="imageFlower" src="sun.png" alt="sun"/> 
+  </div>
+ </div>
+ </div>
+ 
+ <div id="outside" class="modal">
+     <div class="modal-content">
+         <div class="modal-header3">
+           <span data-dismiss="modal" class="closeBtn">&times;</span>
+           <h2>Outside</h2>
+         </div>
+         <div class="modal-footer">
+          <h3>These plants are great to have outside.</h3>
+      </div>
+      <div class="modal-body">
+       <img class="imageFlower" src="outside.png" alt="outside"/> 
+  </div>
+ </div>
+ </div>
+ 
+ <div id="dontknow" class="modal">
+     <div class="modal-content">
+         <div class="modal-header4">
+           <span data-dismiss="modal" class="closeBtn">&times;</span>
+           <h2>Don't know</h2>
+         </div>
+         <div class="modal-footer">
+          <h3>If you don't have a place in mind yet, scroll trough the plants here...</h3>
+      </div>
+      <div class="modal-body">  
+       <img class="imageFlower" src="shadow.png" alt="shadow"/> 
+       <img class="imageFlower" src="sun.png" alt="sun"/> 
+       <img class="imageFlower" src="outside.png" alt="outside"/>  
+  </div>
+ </div>
+ </div>
+
+    <div class="footer">
+        <img src="footer.png" alt="footer">
+        <button class="footer-button" onclick="myFunction2()">More tips</button>
+        <div class="footer-header">🌳 Plantastic - Your fun guide to plants! </div>
+        <div class="bottom-right"> This website is created by Hedvig Reese, Mikael Norinder and Tijana Stanojevic. Feel free to contact us if you want to!
+        </br>
+          <a href="mailto:hedvig.reese@hyperisland.se">hedvig.reese@hyperisland.se</a>, <a
+            href="mailto:mikael.norinder@hyperisland.se">mikael.norinder@hyperisland.se</a> & <a
+            href="mailto:tijana.stanojevic@hyperisland.se">tijana.stanojevic@hyperisland.se</a></p>
+            <p><strong>©2021</strong></p> </div>
+    </div>
+
+    <div class="psychedelic" onclick="myFunction()">🍄</div>
+
+</body>
+</html>

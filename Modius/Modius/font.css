@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Morgant-Regular';
+  src: url('Morgant-Regular.eot');
+  src: url('Morgant-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Morgant-Regular.svg#Morgant-Regular') format('svg'),
+       url('Morgant-Regular.ttf') format('truetype'),
+       url('Morgant-Regular.woff') format('woff'),
+       url('Morgant-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
